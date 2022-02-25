@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F3EF;
+}
+
+.logo {
+    width: 40%;
+    display: inline-block;
+    margin: 0px;
+}
+
+.imgLogo {
+    width: 50%;
+    padding: 1%;
+}
+
+.topNav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    width: 50%;
+    float: right;
+    /* margin-left: auto; */
+
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu {
+    width: 59%;
+    margin-top: 10px;
+
+}
+
+
+.menu ul li {
+    float: right;
+    padding: 15px;
+}
+
+
+.seperator {
+    border: 0.3px solid rgb(216, 216, 216);
+    width: 98%;
+    margin: 0;
+}
+
+header {
+    margin: 3% 8%;
+}
+
+.intro {
+    width: 50%;
+
+}
+
+.personalImg {
+    width: 46%;
+    /* width: 700px; */
+    margin: 0 auto;
+
+}
+
+.shazaImg {
+    position: relative;
+    top: -200px;
+    /* width: 50%; */
+    /* position: static; */
+    /* float: right; */
+    /* margin-right: 30%; */
+    /* display: block; */
+}
+
+.introHeader {
+    font-size: 60px;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.pIntro {
+    font-size: 20px;
+    line-height: 30px;
+    width: 80%;
+}
+
+button {
+    border: 0px solid;
+    padding: 20px;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #f5d4d4;
+    background-image: url(../images/Waves.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.connectTitle {
+    margin-top: 6%;
+    margin-left: 10%;
+    display: inline-block;
+    font-size: 36px;
+    color: #f44a2c;
+}
+
+.connect {
+    margin-left: 7%;
+    display: block;
+}
+
+.connectIcon {
+    width: 20px;
+    vertical-align: text-top;
+}
+
+.contactInfo {
+    margin-left: 3%;
+}
+
+.sectionTitle {
+    margin-left: 1%;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skill {
+    width: 33%;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 'caseStudy1 caseStudy2';
+    margin: 0px 25%;
+    /* text-align: center; */
+}
+
+.caseStudy1 {
+    grid-area: caseStudy1;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+
+    /*grid-template-columns: subgrid;
+    grid-template-rows: subgrid;*/
+    grid-template-areas: 'caseIntro caseImage';
+    margin-top: 10%;
+}
+
+.caseStudy2 {
+    grid-area: caseStudy2;
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 'caseIntro caseImage';
+    margin-top: 18%;
+}
+
+.caseIntro {
+    grid-area: caseIntro;
+
+
+}
+
+.caseImage {
+    grid-area: caseImage;
+    width: 80%;
+}
+
+
+.imgCase {
+    position: relative;
+    max-width: 100%;
+}
+
+.case2 {
+    margin-top: 10%;
+}
+
+.caseTitle {
+    font-size: 40px;
+    margin-top: 15%;
+    margin-bottom: 0px;
+    line-height: 40px;
+    padding: 0;
+    grid-area: caseTitle;
+    width: 100;
+}
+
+.caseType {
+    margin-top: 10px;
+    grid-area: caseType;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btnView {
+    padding: 10px 30px;
+    grid-area: btnView;
+}
+
+.btnView:hover {
+    background-color: #f44a2c;
+}
+
+.btnProjects:hover {
+    background-color: #f44a2c;
+}
+
+.shazaImgMobile {
+    display: none;
+}
+
+.skillIcon {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 30%;
+}
+
+.mountainIcon {
+    width: 70%;
+}
+
+section {
+    margin: 8% 8%;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .flexContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .workGrid {
+        margin: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .shazaImg {
+        display: none;
+
+    }
+
+    .shazaImgMobile {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .introHeader {
+        font-size: 24px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .intro {
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1310px) {
+    .introHeader {
+        /* margin-top: 10px; */
+        font-size: 24px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .pIntro {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    button {
+        padding: 15px;
+    }
+
+    .shazaImg {
+        width: 70%;
+        margin-left: 10%;
+
+    }
+
+
+    .caseStudy1 {
+        grid-template-rows: 270px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "caseImage"
+            "caseIntro";
+        margin-top: 10%;
+
+    }
+
+    .caseStudy2 {
+        grid-template-rows: 220px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "caseImage"
+            "caseIntro";
+        margin-top: 0;
+
+    }
+
+
+
+    .pIntro {
+        width: 100%;
+    }
+
+
+}
