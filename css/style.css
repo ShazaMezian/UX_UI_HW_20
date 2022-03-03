@@ -252,6 +252,11 @@ section {
     margin: 8% 8%;
 }
 
+.findingHeader{
+    padding-top: 10%;
+    padding-right: 20%;
+}
+
 
 
 @media only screen and (max-width: 700px) {
